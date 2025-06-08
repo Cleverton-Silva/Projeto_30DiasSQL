@@ -1,0 +1,4 @@
+SELECT * 
+FROM pedidos
+WHERE data_pedido BETWEEN '2025-06-07' AND '2025-06-13'  -- COMPARADOR BETWEEN 'ENTRE' 
+ORDER BY data_pedido ASC; 

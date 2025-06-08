@@ -1,0 +1,13 @@
+SELECT 
+produto_id,
+categoria, 
+preco_unitario, 
+estoque, 
+descricao, 
+nome,
+CASE -- USANDO CASE PARA DEFINIR A SITUACAO DO ESTOQUE
+	WHEN estoque <= 10 THEN 'NECESSITA AQUISICAO'
+    WHEN estoque BETWEEN 10 AND 50 THEN 'NA MÉDIA'
+    ELSE 'ESTOQUE COMPLETO'
+END AS SITUACAO_ESTOQUE
+ FROM PRODUTOS

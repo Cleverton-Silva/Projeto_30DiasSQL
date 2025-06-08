@@ -1,0 +1,10 @@
+SELECT 
+cl.nome AS NOME, 
+cl.telefone AS TELEFONE, 
+p.status AS STATUS, 
+p.valor_total AS VALOR_TOTAL
+
+FROM clientes AS CL
+
+LEFT JOIN pedidos p -- LEFT JOIN PARA TRAZER TODOS OS DADOS DA TABELA DA ESQUERDA QUE NO CASO É CLIENTES E OS DADOS CORRESPONDENTES DA OUTRA
+		ON cl.cliente_id = p.cliente_id

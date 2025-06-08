@@ -1,0 +1,5 @@
+SELECT * 
+FROM pedidos
+WHERE status = 'Pendente' 
+ORDER BY valor_total DESC
+LIMIT 5; -- LIMITANDO OS 5 PRIMEIROS REGISTROS 
