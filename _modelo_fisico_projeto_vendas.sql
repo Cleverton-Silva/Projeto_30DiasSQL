@@ -5,6 +5,7 @@ COLLATE utf8mb4_0900_ai_ci;
 USE Projeto_Vendas__desafio_30DiasSQL;
 
 -- Produtos
+
 CREATE TABLE produtos (
     produto_id INT AUTO_INCREMENT PRIMARY KEY,
     categoria VARCHAR(50),
@@ -56,3 +57,4 @@ CREATE TABLE pagamentos (
     status_pagamento VARCHAR(50) DEFAULT 'Pendente' NOT NULL,
     FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id)
 );
+
