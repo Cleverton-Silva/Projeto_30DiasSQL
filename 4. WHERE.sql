@@ -1,3 +1,0 @@
-SELECT * 
-FROM pedidos
-WHERE status = 'Pendente' ;-- FILTRA APENAS OS PEDIDOS PENDENTES
